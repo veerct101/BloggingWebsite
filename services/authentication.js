@@ -1,6 +1,6 @@
 const jwt = require("jsonwebtoken")
-
-const secret = "veerCT";
+require("dotenv").config();
+const secret = process.env.JWT_SECRET;
 
 function createTokenForUser(user)
 {
